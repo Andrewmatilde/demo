@@ -80,7 +80,7 @@ func main() {
 	client := newGithubClient(token)
 	switch *cliCommand {
 	case "pack":
-		issues := fetchAllIssuesByLabel(client, *cliOwner, *cliName, "all", []string{})
+		issues := fetchAllIssuesByLabel(client, *cliOwner, *cliName, "all", []string{"bug"})
 		unpackIssues(issues, *cliOutputFileName)
 		return
 	default:
