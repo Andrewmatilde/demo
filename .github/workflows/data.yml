@@ -1,8 +1,8 @@
 name: Go
 
 on:
-  schedule:
-    -  cron: '*/1 * * * *'
+  push:
+    branches: master
 
 jobs:
 
