@@ -28,7 +28,7 @@ jobs:
         fi
 
     - name: Build
-      run: go build -v . -o demo
+      run: go build -o demo
 
     - name: Run
       run: ./demo 
@@ -38,4 +38,4 @@ jobs:
     - name: upload-artifact
       uses: actions/upload-artifact@v2
       with:
-        path: data.json
+        path: ./data.json
