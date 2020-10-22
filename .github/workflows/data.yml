@@ -34,7 +34,7 @@ jobs:
     - name: Run
       run: ./demo 
       env:
-        GITHUB_TOKEN: ${{ secret.TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
     
     - name: upload-artifact
       uses: actions/upload-artifact@v2
