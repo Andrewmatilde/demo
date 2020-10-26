@@ -2,6 +2,10 @@ name: Go
 
 on:
   push:
+  issues:
+    types: [opened, edited, closed]
+  issue_comment:
+    types: [created, deleted]
   schedule:
     - cron:  '0 * * * *'
 
